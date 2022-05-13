@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+#$ -pe omp 16
+
+module load gcc star/2.6.0c
+
+for var in SRR1177966 SRR1177969 SRR1177970 SRR1177993 SRR1177994 SRR1177995 SRR1177998 SRR1178001 SRR1178003
+
+do
+	STAR --genomeDir /project/bf528/project_3/reference/rn4_STAR --readFilesIn ${var}_1.fastq.gz ${var}_2.fastq.gz --runThreadN 16 --outFileNamePrefix star_output/${var} --outSAMtype BAM SortedByCoordinate --readFilesCommand zcat 
+
+done
