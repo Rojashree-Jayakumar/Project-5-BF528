@@ -199,8 +199,8 @@ top10 <- markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_log2FC)
 
 #annotating ids
 
-new.cluster.ids <- c("Beta", "Epsilon", "Alpha", "Transcription factor", "Ductal", "Delta", "Cytotoxic T", "Gamma", 
-                     "Mast", "Stellate", "Acinar", "Vascular")
+new.cluster.ids <- c("Beta", "Mast", "Alpha", "Beta", "Ductal", "Gamma", "Delta", "Macrophage", 
+                     "Epsilon", "Stellate", "Acinar", "Vascular")
 
 
 
