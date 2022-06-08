@@ -1,4 +1,4 @@
-# BF528- FINAL PROJECT
+# BF528- FINAL PROJECT - SINGLE CELL AND BULK mRNA SEQUENCING
 
 This repository contains the contents of the final project. All scripts and output files can be accessed through the  /projectnb/bf528/students/rshreej/Project5-BF528/ on SCC. 
 
